@@ -1,0 +1,13 @@
+{
+    "targets": {
+        "start:develop": {
+            "executor": "@nrwl/node:execute",
+            "dependsOn": [
+                "^start:develop"
+            ],
+            "inputs": [
+                "src"
+            ]
+        }
+    }
+}

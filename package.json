@@ -1,18 +1,23 @@
 {
-  "name": "@tuskdesign/source",
+  "name": "@my-strays/monorepo",
   "workspaces": [
+    "apps/*",
     "packages/*"
   ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "build": "nx run-many --target=build",
+    "start:strapi": "pnpm --filter @my-stays/strapi-api develop"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tslib": "^2.8.0",
-    "typescript": "~5.5.2"
+    "typescript": "~5.5.2",
+    "nx": "20.3.2"
   },
   "dependencies": {}
 }
